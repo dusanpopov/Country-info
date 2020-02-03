@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cc1273351f.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/main.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flags API</title>
+</head>
+<body>
+
+    <header class="main-header">
+
+        <div class="container">
+
+            <h1 class="main-header__title">Where in the world</h1>
+
+            <button class="btn btn-toggle toggle">
+
+                <i class="far fa-moon"></i>
+                <i class="fas fa-moon"></i>
+                    Dark mode
+            </button>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="search-elements">
+
+            <div class="container">
+
+                <input type="text" placeholder="Search for a country" class="search-country">
+
+                <div class="dropdown-menu filter">
+
+                    Filter by region <i class="fas fa-chevron-down"></i>
+
+                    <ul class="dropdown-menu__list">
+                        <li class="dropdown-menu__item">All</li>
+                        <li class="dropdown-menu__item">Africa</li>
+                        <li class="dropdown-menu__item">Americas</li>
+                        <li class="dropdown-menu__item">Asia</li>
+                        <li class="dropdown-menu__item">Europe</li>
+                        <li class="dropdown-menu__item">Oceania</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="display-countries">
+
+            <div class="container countries">
+                Countries loading
+            </div>
+
+        </section>
+
+        <div class="modal" id="modal">
+			<div class="container">
+				<button class="btn-close" id="close">
+					<i class="fas fa-times"></i>
+				</button>
+				<img src="" alt="" />
+				<div class="modal-body"></div>
+			</div>
+		</div>
+
+    </main>
+    
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+body{
+    background-color: $body-background-color;
+}
+
+.main-header{
+    background-color: $color-white;
+}
+
+.container {
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    position: relative;
+
+    .countries{
+        justify-content: center;
+    }
+}
+
+// Input styles
+
+.search-country{
+    border-radius: 4px;
+    border: none;
+    box-shadow: $box-shadow;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 25px;
+    min-width: 300px;
+
+}
+
+// Dropdown styling
+
+.dropdown-menu{
+    border-radius: 4px;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+    padding: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+
+    &__list{
+        position: absolute;
+        display: none;
+        width: 100%;
+        padding: 20px;
+        background-color: $color-white;
+        box-shadow: $box-shadow;
+        left: 0;
+        top: 100%;
+        border-radius: 4px;
+        margin-top: 3px;
+    }
+
+    &__item{
+        margin: 8px 0;
+    }
+
+    .open &__list{
+        display: block;
+    }
+    
+    .fa-chevron-down{
+        margin-left: 10px;
+    }
+}
+
+
+// Country card styling
+
+.country{
+    width: 300px;
+    border-radius: 4px;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 40px;
+
+    &__body{
+        padding: 30px;
+    }
+
+    &__name{
+        margin-top: 0;
+    }
+}
+
+// Toggle button
+
+.btn-toggle{
+    border: none;
+    padding: 10px;
+}
+
+// Modal
+
+.modal {
+	background-color: var(--body);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    z-index: 100;
+    
+    .container {
+        background-color: rgb(161, 161, 161);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+    }
+
+        img {
+            max-width: 300px;
+        }
+            &-body{
+                padding: 30px;
+            }
+}
+    
+
+

@@ -1,0 +1,33 @@
+.btn-toggle{
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-toggle .fas{
+    display: none;
+}
+
+body.dark .btn-toggle .fas{
+    display: inline-block;
+}
+
+body.dark .btn-toggle .far{
+    display: none;
+}
+
+.btn-close {
+    background-color: rgb(161, 161, 161);
+	color: inherit;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	position: absolute;
+	top: 20px;
+    right: 20px;
+
+}
+
+.dark{
+    background-color: $body-background-color-dark;
+}

@@ -55,6 +55,7 @@ body{
         top: 100%;
         border-radius: 4px;
         margin-top: 3px;
+        z-index: 101;
     }
 
     &__item{
@@ -110,7 +111,7 @@ body{
 	left: 0;
 	right: 0;
 	bottom: 0;
-    z-index: 100;
+    	z-index: 100;
     
     .container {
         background-color: rgb(161, 161, 161);

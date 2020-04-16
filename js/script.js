@@ -58,7 +58,6 @@ displayCountries = (countries) => {
 
 getCountries();
 
-
 // Search for a country 
 
 searchElement.addEventListener('input', e => {
@@ -74,7 +73,6 @@ searchElement.addEventListener('input', e => {
 		}
 	});
 });
-
 
 // Filter country by a region
 
@@ -95,7 +93,6 @@ regionFilters.forEach(regionFilter => {
 		});
 	});
 });
-
 
 // Show country details 
 
@@ -142,7 +139,6 @@ showCountryDetails = (country) => {
         </p>
     `;
 }
-
 
 
 toggleDarkMode = () => {

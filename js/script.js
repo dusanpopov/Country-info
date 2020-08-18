@@ -6,9 +6,7 @@ const searchElement = document.querySelector(".search-country");
 const modal = document.getElementById("modal");
 const closeBtn = document.getElementById("close");
 
-   
  // Retrieve country data and show it
- 
  const getCountries = async () => {
 	const response = await fetch("https://restcountries.eu/rest/v2/all");
 	const countries = await response.json();
@@ -16,7 +14,6 @@ const closeBtn = document.getElementById("close");
 }
 
 // Display countries
-
 displayCountries = (countries) => {
 
 	countriesElement.innerHTML = '';
@@ -59,14 +56,12 @@ displayCountries = (countries) => {
 getCountries();
 
 // Search for a country 
-
 searchElement.addEventListener('input', e => {
 	const { value } = e.target;
-	const countryNames = document.querySelectorAll('.country-name');
-
+    const countryNames = document.querySelectorAll('.country-name');
+    
 	countryNames.forEach(countryName => {
 		if (countryName.innerText.toLowerCase().includes(value.toLowerCase())) {
-			
 			countryName.parentElement.parentElement.style.display = 'block';
 		} else {
 			countryName.parentElement.parentElement.style.display = 'none';
@@ -75,7 +70,6 @@ searchElement.addEventListener('input', e => {
 });
 
 // Filter country by a region
-
 regionFilters.forEach(regionFilter => {
 
 	regionFilter.addEventListener('click', () => {
@@ -95,7 +89,6 @@ regionFilters.forEach(regionFilter => {
 });
 
 // Show country details 
-
 showCountryDetails = (country) => {
 
     const modalBody = modal.querySelector('.modal-body');
@@ -139,7 +132,6 @@ showCountryDetails = (country) => {
         </p>
     `;
 }
-
 
 toggleDarkMode = () => {
     document.body.classList.toggle("dark");

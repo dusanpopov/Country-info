@@ -12,7 +12,6 @@ const closeBtn = document.getElementById("close");
 	const countries = await response.json();
 	displayCountries(countries);
 }
-
 // Display countries
 displayCountries = (countries) => {
 
@@ -72,10 +71,10 @@ searchElement.addEventListener('input', e => {
 // Filter country by a region
 regionFilters.forEach(regionFilter => {
 
-	regionFilter.addEventListener('click', () => {
+   regionFilter.addEventListener('click', () => {
 
-		const value = regionFilter.innerText;
-		const countryRegions = document.querySelectorAll('.country-region');
+   const value = regionFilter.innerText;
+   const countryRegions = document.querySelectorAll('.country-region');
 
 		countryRegions.forEach(countryRegion => {
 			if (countryRegion.innerText.includes(value) || value === 'All') {

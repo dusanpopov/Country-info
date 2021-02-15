@@ -16,12 +16,9 @@ const closeBtn = document.getElementById("close");
 displayCountries = (countries) => {
 
 	countriesElement.innerHTML = '';
-
 	countries.forEach(country => {
-
 		const countryElement = document.createElement('div');
 		countryElement.classList.add('country');
-
 		countryElement.innerHTML = `
             <div>
                 <img src="${country.flag}" alt="Germany" />
@@ -47,18 +44,16 @@ displayCountries = (countries) => {
             modal.style.display = "flex";
             showCountryDetails(country);
         })
-
-		countriesElement.appendChild(countryElement);
+	  countriesElement.appendChild(countryElement);
 	});
 }
 
 getCountries();
-
 // Search for a country 
+
 searchElement.addEventListener('input', e => {
 	const { value } = e.target;
     const countryNames = document.querySelectorAll('.country-name');
-    
 	countryNames.forEach(countryName => {
 		if (countryName.innerText.toLowerCase().includes(value.toLowerCase())) {
 			countryName.parentElement.parentElement.style.display = 'block';
@@ -75,16 +70,14 @@ regionFilters.forEach(regionFilter => {
 
    const value = regionFilter.innerText;
    const countryRegions = document.querySelectorAll('.country-region');
-
-		countryRegions.forEach(countryRegion => {
-			if (countryRegion.innerText.includes(value) || value === 'All') {
-				
-				countryRegion.parentElement.parentElement.style.display = 'block';
-			} else {
-				countryRegion.parentElement.parentElement.style.display = 'none';
-			}
-		});
+   countryRegions.forEach(countryRegion => {
+	if (countryRegion.innerText.includes(value) || value === 'All') {
+	    countryRegion.parentElement.parentElement.style.display = 'block';
+	} else {
+		countryRegion.parentElement.parentElement.style.display = 'none';
+	}
 	});
+    });
 });
 
 // Show country details 
@@ -147,4 +140,3 @@ closeModal = () => {
 toggleButton.addEventListener("click", toggleDarkMode);
 filterMenu.addEventListener("click", showRegionMenu);
 closeBtn.addEventListener("click", closeModal);
-

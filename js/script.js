@@ -81,9 +81,8 @@ regionFilters.forEach(regionFilter => {
 
 // Show country details 
 showCountryDetails = (country) => {
-
     const modalBody = modal.querySelector('.modal-body');
-	const modalImg = modal.querySelector('img');
+    const modalImg = modal.querySelector('img');
 
 	modalImg.src = country.flag;
 

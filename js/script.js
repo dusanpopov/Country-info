@@ -16,9 +16,10 @@ const closeBtn = document.getElementById("close");
 displayCountries = (countries) => {
 	countriesElement.innerHTML = '';
 	countries.forEach(country => {
-		const countryElement = document.createElement('div');
-		countryElement.classList.add('country');
-		countryElement.innerHTML = `
+	 const countryElement = document.createElement('div');
+	 countryElement.classList.add('country');
+		
+	 countryElement.innerHTML = `
             <div>
                 <img src="${country.flag}" alt="Germany" />
             </div>

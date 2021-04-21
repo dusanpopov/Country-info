@@ -15,6 +15,7 @@ const closeBtn = document.getElementById("close");
 // Display countries
 displayCountries = (countries) => {
 	countriesElement.innerHTML = '';
+	
 	countries.forEach(country => {
 	 const countryElement = document.createElement('div');
 	 countryElement.classList.add('country');
@@ -51,7 +52,7 @@ displayCountries = (countries) => {
 getCountries();
 // Search for a country 
 searchElement.addEventListener('input', e => {
-	const { value } = e.target;
+    const { value } = e.target;
     const countryNames = document.querySelectorAll('.country-name');
 	countryNames.forEach(countryName => {
 	  if (countryName.innerText.toLowerCase().includes(value.toLowerCase())) {

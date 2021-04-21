@@ -8,9 +8,9 @@ const closeBtn = document.getElementById("close");
 
  // Retrieve country data and show it
  const getCountries = async () => {
-	const response = await fetch("https://restcountries.eu/rest/v2/all");
-	const countries = await response.json();
-	displayCountries(countries);
+    const response = await fetch("https://restcountries.eu/rest/v2/all");
+    const countries = await response.json();
+    displayCountries(countries);
 }
 // Display countries
 displayCountries = (countries) => {

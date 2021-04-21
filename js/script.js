@@ -56,10 +56,10 @@ searchElement.addEventListener('input', e => {
     const countryNames = document.querySelectorAll('.country-name');
 	countryNames.forEach(countryName => {
 	  if (countryName.innerText.toLowerCase().includes(value.toLowerCase())) {
-		countryName.parentElement.parentElement.style.display = 'block';
-		} else {
-		countryName.parentElement.parentElement.style.display = 'none';
-		}
+	     countryName.parentElement.parentElement.style.display = 'block';
+	     }else{
+	     countryName.parentElement.parentElement.style.display = 'none';
+	   }
 	});
 });
 

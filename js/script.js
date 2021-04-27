@@ -21,7 +21,7 @@ displayCountries = (countries) => {
 		
 	 countryElement.innerHTML = `
             <div>
-                <img src="${country.flag}" alt="Germany" />
+                <img src="${country.flag}" alt="Country flag" />
             </div>
             <div class="country__body">
                 <h3 class="country-name">${country.name}</h3>

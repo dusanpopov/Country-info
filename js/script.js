@@ -14,9 +14,9 @@ const closeBtn = document.getElementById("close");
 }
 // Display countries
 displayCountries = (countries) => {
-	countriesElement.innerHTML = '';
-	countries.forEach(country => {
-	 const countryElement = document.createElement('div');
+  countriesElement.innerHTML = '';
+  countries.forEach(country => {
+  const countryElement = document.createElement('div');
 	 countryElement.classList.add('country');
 		
 	 countryElement.innerHTML = `

@@ -39,7 +39,6 @@ displayCountries = (countries) => {
                 </p>
             </div>
         `;
-
         countryElement.addEventListener("click", () => {
             modal.style.display = "flex";
             showCountryDetails(country);

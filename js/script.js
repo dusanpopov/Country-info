@@ -18,7 +18,6 @@ displayCountries = (countries) => {
   countries.forEach(country => {
   const countryElement = document.createElement('div');
 	 countryElement.classList.add('country');
-		
 	 countryElement.innerHTML = `
             <div>
                 <img src="${country.flag}" alt="Country flag" />

@@ -54,7 +54,7 @@ searchElement.addEventListener('input', e => {
 	countryNames.forEach(countryName => {
 	  if (countryName.innerText.toLowerCase().includes(value.toLowerCase())) {
 	     countryName.parentElement.parentElement.style.display = 'block';
-	     }else{
+	     } else {
 	     countryName.parentElement.parentElement.style.display = 'none';
 	   }
 	});

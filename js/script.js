@@ -82,7 +82,6 @@ showCountryDetails = (country) => {
     const modalBody = modal.querySelector('.modal-body');
     const modalImg = modal.querySelector('img');
     modalImg.src = country.flag;
-
 	modalBody.innerHTML = `
         <h2>${country.name}</h2>
         <p>

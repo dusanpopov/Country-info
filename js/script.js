@@ -12,6 +12,7 @@ const closeBtn = document.getElementById("close");
     const countries = await response.json();
     displayCountries(countries);
 }
+ 
 // Display countries
 displayCountries = (countries) => {
   countriesElement.innerHTML = '';

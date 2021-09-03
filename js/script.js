@@ -73,7 +73,7 @@ regionFilters.forEach(regionFilter => {
 	if (countryRegion.innerText.includes(value) || value === 'All') {
 	    countryRegion.parentElement.parentElement.style.display = 'block';
 	} else {
-		countryRegion.parentElement.parentElement.style.display = 'none';
+	  countryRegion.parentElement.parentElement.style.display = 'none';
 	}
 	});
     });

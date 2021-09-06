@@ -35,8 +35,8 @@ displayCountries = (countries) => {
                     ${country.region}
                 </p>
                 <p>
-                    <strong>Capital:</strong>
-                    ${country.capital}
+                  <strong>Capital:</strong>
+                  ${country.capital}
                 </p>
             </div>
         `;
